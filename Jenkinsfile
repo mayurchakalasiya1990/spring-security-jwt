@@ -60,7 +60,7 @@ pipeline {
                 // This step should not normally be used in your script. Consult the inline help for details.
                 script{
                     withDockerRegistry(credentialsId: '22a7b55e-6958-400b-9720-92abff5700e0', toolName: 'docker') {
-                        sh "docker run -d --name spring-security-demo -p 8070:8070 mayurchakalasiya1410/spring-security-jwt:latest"
+                        sh "docker run -d -p 8070:8070 mayurchakalasiya1410/spring-security-jwt:latest"
                     }
                 }
 
